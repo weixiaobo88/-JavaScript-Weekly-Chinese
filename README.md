@@ -1,0 +1,2 @@
+# -JavaScript-Weekly-Chinese
+Translation.
