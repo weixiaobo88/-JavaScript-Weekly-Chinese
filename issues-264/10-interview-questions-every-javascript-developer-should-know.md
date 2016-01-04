@@ -54,8 +54,3 @@ Erlang 的创造者 Joe Armstrong 总结了一个著名的问题，这个问题�
 正如 Marcus Lemonis 说的，关注在 3 个 P 上：“People, Process, Product”。
 
 
-
-
-
-
-
