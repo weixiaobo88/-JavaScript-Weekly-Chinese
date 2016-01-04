@@ -28,5 +28,34 @@
     
 在 Backbone 统治（Backbone 用它自己的类的形式）的年代，我看到一个扩展性不凑的代码库变的脆弱和混乱。我看到很多代码为了调用类的API而必须使用'new'来抽象，或者使用工厂，强迫使用容器的依赖注入，使得每个依赖都与容器 API 强绑定，这些都使代码变的复杂。Angular 有四种不同的方式来创建 service，并使用一个依赖注入容器对其抽象。
     
-很多杰出的人在 JavaScript 出现前，也就是数十年前已经意识到类继承的风险，你可以找到相关的论文，比如“Object Oriented Programming Considered Harmful”，“Class Considered Harmful” 以及 “New Considered Harmful”。诸如此类的警告发表在 Usenet 上、学术论文中以及受人推崇的出版商上，比如 Doctor Dobb’s Journal —— 一本介绍了软件开发在2014年前40年左右智慧的杂志。
+很多杰出的人在 JavaScript 出现前，也就是数十年前已经意识到类继承的风险，你可以找到相关的论文，比如“Object Oriented Programming Considered Harmful”，“Class Considered Harmful” 以及 “New Considered Harmful”。诸如此类的警告发表在 Usenet 上、学术论文中以及受人推崇的出版商上，比如 Doctor Dobb’s Journal —— 一本介绍了软件开发在2014年前40年左右智慧的杂志。很巧的是，还有一篇题为“Considered Harmful Considered Harmful”的文章，不过我离题了。
+
+Erlang 的创造者 Joe Armstrong 总结了一个著名的问题，这个问题在书《[Coders at Work](http://amzn.to/1WcDcJt)》中被称为“大猩猩与香蕉问题”。
+
+> 面向对象语言的问题在于它们会抓住周围所有的隐式的环境信息。你只想要一个香蕉，但是你得到的是拿着香蕉的大猩猩以及整个丛林。
+
+面向对象设计的经典书籍“[Design Patterns: Elements of Reusable Object-Oriented Software](http://amzn.to/1Qs3VOv)”中提到“组合由于类继承”。
+
+> 
+  有些读者想要更多关于类的讨论，下面的资料能知道为什么我不喜欢JavaScript中的类。
+  
+  * [The Two Pillars of JavaScript: How to Escape the 7th Circle of Hell](https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3)
+  * [A Simple Challenge to Classical Inheritance Fans](https://medium.com/javascript-scene/a-simple-challenge-to-classical-inheritance-fans-e78c2cf5eead)
+  * [Common Misconceptions About Inheritance in JavaScript](https://medium.com/javascript-scene/common-misconceptions-about-inheritance-in-javascript-d5d9bab29b0a)
+  * [How to Fix the ES6 `class` Keyword](https://medium.com/javascript-scene/how-to-fix-the-es6-class-keyword-2d42bb3f4caf)
+  * [Introducing the Stamp Specification](https://medium.com/javascript-scene/introducing-the-stamp-specification-77f8911c2fee)
+
+如果你是一个类继承的忠实粉丝，你可能不同意这些文章中所论述的内容，不过其中也有有价值的部分，你可以去其糟粕，取其精华，我不会为此而生气。
+
+## 始于某些人的言论
+
+在[How to Build a High Velocity Development Team](https://medium.com/javascript-scene/how-to-build-a-high-velocity-development-team-4b2360d34021) 中，我提出一个观点：没有什么比一个非同一般的团队能预测业务的结果。如果你想打破这个断言，你应该现在开始做。
+
+正如 Marcus Lemonis 说的，关注在 3 个 P 上：“People, Process, Product”。
+
+
+
+
+
+
 
