@@ -53,4 +53,98 @@ Erlang 的创造者 Joe Armstrong 总结了一个著名的问题，这个问题�
 
 正如 Marcus Lemonis 说的，关注在 3 个 P 上：“People, Process, Product”。
 
+你早期应该雇用经验丰富的候选者，这些人可以招聘或者指导其他开发人员，帮助后期招进来的中级或初级开发人员的成长。
+
+[Why Hiring is So Hard in Tech](https://medium.com/javascript-scene/why-hiring-is-so-hard-in-tech-c462c3230017)文章可以对候选者的评价给出建议。
+
+> 考察一个候选者最好的方式就是结对编程。
+
+和候选者结对编程，让候选者来驱动，多看他怎么写的，多听他怎么说的。一个好的项目可能会从Twitter API上pull很多tweets然后将其显示在时间轴上。
+
+也就是说，没有一个单一的练习会告诉你需要知道的所有事情。面试可能是一个非常有用的工具，但是不要把时间花费在问一些语法问题或者语言的一些怪癖上。你需要关注更重要的事情上。你可以问一些架构或范式的东西，这些对于整个项目来讲很重要。
+
+语法和特性很容易通过Google找到，但是对于软件精髓或通用的范式这些需要经验的东西来说并不是很容易能Google到。
+
+JavaScript很特殊，它在每个大型的应用中都起到了重要的作用，是什么让JavaScript这么不同于其他语言呢？
+
+下面这些问题可以帮助你来思考这个问题：
+
+1. 你能说出对JavaScript开发人员来说很重要的两种编程范式吗？
+
+JavaScript是一个多范式的语言，支持指令式/过程式编程，也支持面向对象编程和函数式编程。JavaScript支持原型继承的面向对象编程。
+
+很高兴能听到以下内容: 
+
+- 原型继承（或原型、OLOO）
+- 函数式编程（或闭包、一等函数、lambdas）
+
+危险信号：
+
+- 不知道什么范式，没有提到原型面向对象或函数式编程。
+
+更多资料：
+
+- [The Two Pillars of JavaScript Part 1](https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3)——原型面向对象
+- [The Two Pillars of JavaScript Part 2](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4)——函数式编程
+
+
+2. 什么是函数式编程
+
+函数式编程的程序由数学函数组成，并且不会共享状态和不会有可变的数据。Lisp(1958年声明)是第一个支持函数式编程的语言，这其中受到了lambda微积分的很大启发。Lisp 和很多 Lisp 家族语言在今天仍然很常用。
+
+函数式编程是JavaScript的精髓概念（是JavaScript的两个支柱之一），在 ES5 中已经加入了很多常用的函数式功能。
+
+很高兴能听到以下内容: 
+
+- 纯函数
+- 避免副作用
+- 简单的函数组合
+- 函数式语言的例子：Lisp、ML、Haskell、Erlang、Clojure、Elm、F Sharp、OCaml 等
+- 提到支持函数式编程的特性：一等函数、高阶函数、函数作为参数或值
+
+危险信号：
+
+- 没有提到纯函数或避免副作用
+- 不能说出哪些语言是函数式编程语言
+- 不能说出JavaScript支持函数式编程的特性
+
+更多资料：
+
+- [The Two Pillars of JavaScript Part 2](https://medium.com/javascript-scene?source=logo-lo_d50cb5f9e62f-c0aeac5284ad)
+- [The Dao of Immutability](https://medium.com/javascript-scene/the-dao-of-immutability-9f91a70c88cd)
+- [Professor Frisby’s Mostly Adequate Guide to Functional Programming](https://github.com/MostlyAdequate/mostly-adequate-guide)
+- [The Haskell School of Music](http://haskell.cs.yale.edu/wp-content/uploads/2015/03/HSoM.pdf)
+
+3. 类式继承和原型继承有什么区别？
+
+类式继承：实例继承自类（像一个计划——类的描述），创建子类关系：分层体系。实例是由构造函数通过'new'关键字来初始化的。类式继承在 ES6中可能使用 'class' 关键字。
+
+原型继承：实例继承自其他对象。实例通过工厂函数或'Object.create()' 来初始化，实例可能通过多个不同对象组成，允许简单的选择性继承。
+
+> 在JavaScript中，原型继承比类继承更简单更灵活。
+
+很高兴能听到以下内容: 
+
+- 类：创建紧耦合，紧层次/紧分类
+- 原型：提到可拼接的继承，原型代理，函数式继承，对象组合
+
+危险信号：
+
+- 相比类继承，对于原型继承和组合没有偏好
+
+更多资料：
+
+- [The Two Pillars of JavaScript Part 1 — Prototypal OO](https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3)
+- [Common Misconceptions About Inheritance in JavaScript](https://medium.com/javascript-scene/common-misconceptions-about-inheritance-in-javascript-d5d9bab29b0a)
+
+4. 函数式编程和面向对象编程的优缺点分别是什么？
+
+面向对象编程优点：很容易理解对象以及方法调用的基本概念。面向对象编程倾向于使用命令式的风格而非声明式的风格，这读起来就像电脑执行指令一样。
+
+面向对象编程确定：面向对象编程依赖于共享的状态。对象和行为在同一个实体上绑定在一起，对于运行顺序不确定的多个函数来说，可能会被随机访问，这可能会导致预想不到的结果，比如竞争条件。
+
+函数式编程的优点：
+
+
+
 
